@@ -75,7 +75,7 @@ function searchCalendar() {
 function selectDate(dateElement) {
 	const text = prompt('Введите текст события:')
 	if (text) {
-		dateElement.classList.add('event', 'date__gray')
+		dateElement.classList.add('date__gray')
 		const dayContent = dateElement.querySelector('.editable')
 
 		if (dayContent) {
