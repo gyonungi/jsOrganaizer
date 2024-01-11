@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+header {
+	width: 1200px;
+	height: 100px;
+	background-color: #00ffff;
+	display: flex;
+	flex-wrap: nowrap;
+	align-content: space-between;
+	justify-content: space-around;
+	align-items: flex-end;
+	gap: 300px;
+	padding-bottom: 20px;
+}
+.header button {
+	margin-right: 20px;
+}
+.header__right {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 10px;
+}
+.header__right img {
+	width: 20px;
+	height: 20px;
+}
+.calendar {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	padding: 10px;
+}
+.searchInp {
+	padding: 5px;
+}
+.calendar__header {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 30px;
+}
+.calendar__today {
+	background-color: white;
+	background-repeat: no-repeat;
+	color: black;
+	border: 1px solid black;
+	padding: 5px;
+}
+.calendar__button {
+	background-color: #ffffff;
+	color: rgb(0, 0, 0);
+	border: 1px solid;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+.header__button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.header__button:hover {
+	background-color: #0056b3;
+}
+
+.dates {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.date {
+	height: 100px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+	text-align: center;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	padding: 5px;
+}
+.date .day__week {
+	border: none;
+	pointer-events: none;
+}
+.date__gray {
+	background-color: #d3d3d3; /* Используйте нужный вам цвет серого */
+}
+.date:hover {
+	background-color: #f0f0f0;
+}
+.highlight {
+	background-color: yellow;
+}
